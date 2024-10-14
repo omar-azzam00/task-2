@@ -174,12 +174,11 @@ Polynomial Polynomial::integral() const
 
 double Polynomial::integral(double x1, double x2) const
 {
-    // note that preplexity produces wrong answers here
-    // this is how the correct implementation must be
-    // auto integ = integral();
-    // return integ.evaluate(x2) - integ.evaluate(x1);
+    // Get the antiderivative
+    Polynomial antiderivative = this->integral();
 
-    return evaluate(x2) - evaluate(x1);
+    // Evaluate at x2 and x1
+    return antiderivative.evaluate(x2) - antiderivative.evaluate(x1);
 }
 
 double Polynomial::getRoot(double guess, double tolerance, int maxIter)
