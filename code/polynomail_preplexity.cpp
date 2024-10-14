@@ -174,6 +174,11 @@ Polynomial Polynomial::integral() const
 
 double Polynomial::integral(double x1, double x2) const
 {
+    // note that preplexity produces wrong answers here
+    // this is how the correct implementation must be
+    // auto integ = integral();
+    // return integ.evaluate(x2) - integ.evaluate(x1);
+
     return evaluate(x2) - evaluate(x1);
 }
 
