@@ -2,7 +2,7 @@
 #include <vector>
 #include <stdexcept>
 #include <cmath>
-#include "polynomial.h"
+#include "../polynomial.h"
 
 using namespace std;
 
