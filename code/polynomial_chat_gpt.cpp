@@ -1,4 +1,4 @@
-#include "polynomial.h"
+#include "../polynomial.h"
 
 // Constructors
 Polynomial::Polynomial() : coeffs(1, 0.0) {} // Default constructor (constant 0)
