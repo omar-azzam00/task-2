@@ -148,7 +148,7 @@ Polynomial Polynomial::compose(const Polynomial &q) const
 Polynomial Polynomial::derivative() const
 {
     if (coeffs.size() <= 1)
-        return Polynomial({0});
+        return Polynomial();
 
     vector<double> derivCoeffs(coeffs.size() - 1);
 
